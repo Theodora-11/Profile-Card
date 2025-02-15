@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+menu {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 40px 0 rgba(0, 0, 0, 0.19);;
+  margin-top: 3.5vh;
+  margin-inline: auto;
+  height: 38em;
+  position: relative;
+  max-width: 34em;
+  border-radius: 4.3em 0.3em;
+  border: 2px solid rgb(190, 34, 190);
+  z-index: 2;
+}
+
+.profile-photo {
+  position: absolute;
+  width: 9.3em;
+  height: 15em;
+  display: block;
+  top: 3%;
+  left: 13.5em; 
+  border-radius: 50%;
+  border: 2px solid rgb(190, 34, 190);
+  z-index: 1;
+}
+
+.flower {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  opacity: 0.4;
+  z-index: 0;
+}
+.flower1 {
+  left:0;
+  bottom: 0;
+  position: absolute;
+  width: 22em;
+  height: 22em;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.link-wrapper {
+  position: auto;
+  margin-top: 55%;;
+  margin-inline: auto;
+  width: 60%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.link-wrapper > .facebook, 
+.instagram, .internet, .gmail, .youtube {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.text {
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 0.5em 3.5em;
+}
+
+.buttons-wrapper {
+  /* border: 2px solid black; */
+  width: 60%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.button {
+  box-shadow: 2px 2px rgb(185, 184, 184);
+  width: 45%;
+  font-size: 1em;
+  padding: 0.5em 0.5em;
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white;
+  background:rgb(190, 34, 190);
+  z-index: 1;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: white;
+  color: rgb(190, 34, 190);
+  border-color: rgb(190, 34, 190);
+}

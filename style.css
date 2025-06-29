@@ -150,4 +150,25 @@ menu {
   }
 }
 
+@media screen and (min-width: 700px) {
+  .link-wrapper  {
+    width: 60%;
+  }
 
+  .link-wrapper > .facebook, 
+  .instagram, .internet, .gmail, .youtube {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .flower, .flower1 {
+    width: 22rem;
+    height: 22rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+    padding: 0rem 3rem;
+
+  }
+}

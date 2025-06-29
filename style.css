@@ -1,56 +1,62 @@
-* {
+ *, 
+::after,
+::before {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 menu {
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 40px 0 rgba(0, 0, 0, 0.19);;
-  margin-top: 3.5vh;
-  margin-inline: auto;
-  height: 38em;
-  position: relative;
-  max-width: 34em;
-  border-radius: 4.3em 0.3em;
+  padding: 0;
+  margin: 2% auto;
+  inset: 0;
   border: 2px solid rgb(190, 34, 190);
-  z-index: 2;
-}
-
-.profile-photo {
-  position: absolute;
-  width: 9.3em;
-  height: 15em;
+  width: 700px;
+  max-width: 95%;
   display: block;
-  top: 3%;
-  left: 13.5em; 
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 2px 40px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  border-radius: 4.3em 0.3em; 
+  overflow: auto;
+} 
+
+ .profile-photo {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 8rem;
+  margin: auto;
+  display: block;
+  top: 2.2rem;
   border-radius: 50%;
   border: 2px solid rgb(190, 34, 190);
   z-index: 1;
-}
+} 
 
 .flower {
   right: 0;
   top: 0;
   position: absolute;
-  width: 20em;
-  height: 20em;
+  width: 15rem;
+  height: 15rem;
   opacity: 0.4;
   z-index: 0;
 }
+
 .flower1 {
   left:0;
   bottom: 0;
   position: absolute;
-  width: 22em;
-  height: 22em;
+  width: 15rem;
+  height: 15rem;
   opacity: 0.4;
   z-index: 0;
 }
 
 .link-wrapper {
-  position: auto;
-  margin-top: 55%;;
+  position: relative;
+  margin-top: 3rem;
   margin-inline: auto;
-  width: 60%;
-  /* border: 2px solid black; */
+  width: 80%; 
   display: flex;
   justify-content: space-around;
   padding: 5px;
@@ -58,20 +64,24 @@ menu {
 
 .link-wrapper > .facebook, 
 .instagram, .internet, .gmail, .youtube {
-  width: 30px;
-  height: 30px;
+  width: 1.85em;
+  height: 1.85em;
   cursor: pointer;
 }
 
 .text {
+  margin-top: 1rem;
   font-style: italic;
-  font-size: 1.2em;
-  padding: 0.5em 3.5em;
+  font-size: 1em;
+  padding: 0rem 1.5rem;
+  text-indent: 1.5rem;
+  font-size: 1.2rem;
+
 }
 
 .buttons-wrapper {
-  /* border: 2px solid black; */
-  width: 60%;
+  margin-top: 1rem;
+  width: 17rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-around;
@@ -80,10 +90,10 @@ menu {
 
 .button {
   box-shadow: 2px 2px rgb(185, 184, 184);
-  width: 45%;
-  font-size: 1em;
-  padding: 0.5em 0.5em;
-  border-radius: 20px;
+  width: 7.5rem;
+  font-size: 1.1em;
+  padding: 0.2em 0.5em;
+  border-radius: 1rem;
   border: 2px solid white;
   color: white;
   background:rgb(190, 34, 190);
@@ -96,3 +106,48 @@ menu {
   color: rgb(190, 34, 190);
   border-color: rgb(190, 34, 190);
 }
+
+
+
+/******************
+    MEDIA QUERI
+*******************/
+
+@media screen and (min-width: 500px) {
+
+  .profile-photo {
+    width: 10rem;
+
+  }
+  .link-wrapper  {
+    width: 80%;
+  }
+
+  .link-wrapper > .facebook, 
+  .instagram, .internet, .gmail, .youtube {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .flower, .flower1 {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    padding: 0rem 2.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .buttons-wrapper {
+    width: 24rem;
+    margin-top: 1.8rem; 
+  }
+
+  .button {
+    width: 11rem; 
+  }
+}
+
+
